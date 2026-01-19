@@ -10,43 +10,46 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    logo: '/Picture/avatar.jpg',
+    // 这里的 Logo 是左上角的，建议保持不动（用 gif 动图）
+    logo: '/Picture/logo.gif',
     siteTitle: 'Mizuki Bot',
 
+    // 导航栏 (无 Emoji)
     nav: [
       { text: '首页', link: '/' },
       { text: '快速开始', link: '/usage' },
       { 
         text: '功能大全', 
         items: [
-          { text: '🎵 PJSK 相关', link: '/features/pjsk' },
-          { text: '🎰 舞萌 DX', link: '/features/maimai' },
-          { text: '🎨 表情制作', link: '/features/meme' },
-          { text: '🛠️ 通用工具', link: '/features/tools' }
+          { text: 'PJSK 相关', link: '/features/pjsk' },
+          { text: '舞萌 DX', link: '/features/maimai' },
+          { text: '表情制作', link: '/features/meme' },
+          { text: '通用工具', link: '/features/tools' }
         ]
       },
       { text: '贡献榜', link: '/contribution' }
     ],
 
+    // 侧边栏 (无 Emoji)
     sidebar: {
       '/': [
         {
-          text: '🚀 入门指南',
+          text: '入门指南',
           items: [
             { text: '如何使用', link: '/usage' }
           ]
         },
         {
-          text: '📦 功能文档',
+          text: '功能文档',
           items: [
-            { text: '🎵 PJSK 相关功能', link: '/features/pjsk' },
-            { text: '🎰 舞萌 DX 专项', link: '/features/maimai' },
-            { text: '🎨 表情制作系统', link: '/features/meme' },
-            { text: '🛠️ 通用工具与娱乐', link: '/features/tools' }
+            { text: 'PJSK 相关功能', link: '/features/pjsk' },
+            { text: '舞萌 DX 专项', link: '/features/maimai' },
+            { text: '表情制作系统', link: '/features/meme' },
+            { text: '通用工具与娱乐', link: '/features/tools' }
           ]
         },
         {
-          text: '🏆 关于',
+          text: '关于',
           items: [
             { text: '贡献者与鸣谢', link: '/contribution' }
           ]
