@@ -67,4 +67,18 @@
 
 <details style="background:#fff; margin-bottom:8px; border-radius:8px;"><summary style="cursor:pointer; padding:12px; font-weight:bold; color:#bb88ee;">🎈 21. Rui (类)</summary><div style="padding:10px;"><img src="/Picture/21.jpg" style="width:100%; border-radius:8px;"></div></details>
 
-<details style="background:#fff; margin-bottom:8px; border-radius:8px;"><summary style="cursor:point
+<details style="background:#fff; margin-bottom:8px; border-radius:8px;"><summary style="cursor:pointer; padding:12px; font-weight:bold; color:#fcc800;">🎹 22. Saki (咲希)</summary><div style="padding:10px;"><img src="/Picture/22.jpg" style="width:100%; border-radius:8px;"></div></details>
+
+<details style="background:#fff; margin-bottom:8px; border-radius:8px;"><summary style="cursor:pointer; padding:12px; font-weight:bold; color:#b3d234;">🍜 23. Shiho (志步)</summary><div style="padding:10px;"><img src="/Picture/23.jpg" style="width:100%; border-radius:8px;"></div></details>
+
+<details style="background:#fff; margin-bottom:8px; border-radius:8px;"><summary style="cursor:pointer; padding:12px; font-weight:bold; color:#99eebb;">💧 24. Shizuku (雫)</summary><div style="padding:10px;"><img src="/Picture/24.jpg" style="width:100%; border-radius:8px;"></div></details>
+
+<details style="background:#fff; margin-bottom:8px; border-radius:8px;"><summary style="cursor:pointer; padding:12px; font-weight:bold; color:#4488dd;">☕ 25. Touya (冬弥)</summary><div style="padding:10px;"><img src="/Picture/25.jpg" style="width:100%; border-radius:8px;"></div></details>
+
+<details style="background:#fff; margin-bottom:8px; border-radius:8px;"><summary style="cursor:pointer; padding:12px; font-weight:bold; color:#ffbb55;">🌟 26. Tsukasa (司)</summary><div style="padding:10px;"><img src="/Picture/26.jpg" style="width:100%; border-radius:8px;"></div></details>
+
+<br>
+
+<div style="text-align: center; color: #ccc; font-size: 12px; margin-top: 30px;">
+  ID 范围更新至 #359 (Made by HX-Wrdzgzs)
+</div>
