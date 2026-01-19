@@ -5,17 +5,14 @@ export default defineConfig({
   description: "专为 PJSK 与 舞萌 DX 玩家打造的贴心助手",
   lang: 'zh-CN',
   
-  // 即使在深色模式下，也强制使用粉色调
   head: [
     ['link', { rel: 'icon', href: '/Picture/avatar.jpg' }]
   ],
 
   themeConfig: {
-    // 左上角 Logo
     logo: '/Picture/avatar.jpg',
     siteTitle: 'Mizuki Bot',
 
-    // 顶部导航栏
     nav: [
       { text: '首页', link: '/' },
       { text: '快速开始', link: '/usage' },
@@ -31,7 +28,6 @@ export default defineConfig({
       { text: '贡献榜', link: '/contribution' }
     ],
 
-    // 侧边栏 (你的大分类在这里实现)
     sidebar: {
       '/': [
         {
@@ -58,18 +54,15 @@ export default defineConfig({
       ]
     },
 
-    // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/HX-Wrdzgzs/Mizuki-Bot' }
+      { icon: 'github', link: 'https://github.com/HX-Wrdzgzs/MizukiBot' }
     ],
 
-    // 页脚
     footer: {
       message: 'Created with 🎀 by HX-Wrdzgzs',
       copyright: 'Powered by HongXingOS6'
     },
     
-    // 搜索功能
     search: {
       provider: 'local'
     }
