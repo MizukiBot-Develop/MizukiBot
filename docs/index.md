@@ -5,16 +5,14 @@ hero:
   name: "Mizuki Bot"
   text: "帮助文档"
   tagline: "「 ボクは……ボクでいたいだけ 」"
-  image:
-    # 👇 这里也换成 gif
-    src: /Picture/logo.gif
-    alt: Mizuki Bot
+  # 注意：这里没有 image 字段，因为我们在 index.ts 里写了随机逻辑
+  
   actions:
     - theme: brand
-      text: 🚀 快速开始
+      text: 快速开始
       link: /usage
     - theme: alt
-      text: 🎵 PJSK 功能
+      text: PJSK 功能
       link: /features/pjsk
 
 features:
