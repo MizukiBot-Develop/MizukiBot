@@ -10,7 +10,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    // 这里的 Logo 是左上角的，建议保持不动（用 gif 动图）
+    // 👇 这里强制改成 gif，左上角就会动了
     logo: '/Picture/logo.gif',
     siteTitle: 'Mizuki Bot',
 
