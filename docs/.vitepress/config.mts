@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "Mizuki Bot 帮助文档", // 浏览器标签标题
+  title: "Mizuki Bot 帮助文档",
   description: "专为 PJSK 与 舞萌 DX 玩家打造的贴心助手",
   lang: 'zh-CN',
   
@@ -11,7 +11,6 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/Picture/logo.gif',
-    // 👇 标题已修改
     siteTitle: 'Mizuki Bot 帮助文档',
 
     nav: [
