@@ -5,12 +5,12 @@
 <br>
 
 <div class="custom-card" style="background: var(--vp-c-bg-soft); border-left: 5px solid #E97EB3; padding: 20px; border-radius: 8px;">
-  <h3 style="margin-top: 0; color: #E97EB3;">生成指令</h3>
-  <code style="color: #E97EB3; font-weight: bold; font-size: 1.2em; padding: 5px 10px; border-radius: 5px;">pjsk [ID] [文本]</code>
-  <p style="font-size: 13px; opacity: 0.8; margin-top: 10px;">
-    例: <code>pjsk 40 哇古哇古</code> (Emu)<br>
-    例: <code>pjsk 280 呵呵</code> (Rui)
-  </p>
+<h3 style="margin-top: 0; color: #E97EB3;">生成指令</h3>
+<code style="color: #E97EB3; font-weight: bold; font-size: 1.2em; padding: 5px 10px; border-radius: 5px;">pjsk [ID] [文本]</code>
+<p style="font-size: 13px; opacity: 0.8; margin-top: 10px;">
+例: <code>pjsk 40 哇古哇古</code> (Emu)<br>
+例: <code>pjsk 280 呵呵</code> (Rui)
+</p>
 </div>
 
 <br>
@@ -18,11 +18,11 @@
 ## 角色 ID 速查表
 
 <div style="text-align: center; margin-bottom: 20px;">
-  <img src="/Picture/pjsk_all.jpg" style="border-radius: 15px; border: 3px solid #E97EB3; max-width: 100%;">
-  <p style="font-size: 12px; opacity: 0.6;">▲ 点击下方名字展开查看具体 ID</p>
+<img src="/Picture/pjsk_all.jpg" style="border-radius: 15px; border: 3px solid #E97EB3; max-width: 100%;">
+<p style="font-size: 12px; opacity: 0.6;">▲ 点击下方名字展开查看具体 ID</p>
 </div>
 
-<!-- ================= 1-26 (去掉了前面的 Emoji) ================= -->
+<!-- ================= 1-26 (确保所有 details 都闭合了) ================= -->
 
 <details class="custom-card" style="margin-bottom:8px; border-radius:8px;"><summary style="cursor:pointer; padding:12px; font-weight:bold; color:#ff748c;">1. Airi (爱莉)</summary><div style="padding:10px;"><img src="/Picture/1.jpg" style="width:100%; border-radius:8px;"></div></details>
 
@@ -66,4 +66,18 @@
 
 <details class="custom-card" style="margin-bottom:8px; border-radius:8px;"><summary style="cursor:pointer; padding:12px; font-weight:bold; color:#bb88ee;">21. Rui (类)</summary><div style="padding:10px;"><img src="/Picture/21.jpg" style="width:100%; border-radius:8px;"></div></details>
 
-<details class="custom-card" style="margin-bottom:8px; border-radius:8px;"><summary style="curso
+<details class="custom-card" style="margin-bottom:8px; border-radius:8px;"><summary style="cursor:pointer; padding:12px; font-weight:bold; color:#fcc800;">22. Saki (咲希)</summary><div style="padding:10px;"><img src="/Picture/22.jpg" style="width:100%; border-radius:8px;"></div></details>
+
+<details class="custom-card" style="margin-bottom:8px; border-radius:8px;"><summary style="cursor:pointer; padding:12px; font-weight:bold; color:#b3d234;">23. Shiho (志步)</summary><div style="padding:10px;"><img src="/Picture/23.jpg" style="width:100%; border-radius:8px;"></div></details>
+
+<details class="custom-card" style="margin-bottom:8px; border-radius:8px;"><summary style="cursor:pointer; padding:12px; font-weight:bold; color:#99eebb;">24. Shizuku (雫)</summary><div style="padding:10px;"><img src="/Picture/24.jpg" style="width:100%; border-radius:8px;"></div></details>
+
+<details class="custom-card" style="margin-bottom:8px; border-radius:8px;"><summary style="cursor:pointer; padding:12px; font-weight:bold; color:#4488dd;">25. Touya (冬弥)</summary><div style="padding:10px;"><img src="/Picture/25.jpg" style="width:100%; border-radius:8px;"></div></details>
+
+<details class="custom-card" style="margin-bottom:8px; border-radius:8px;"><summary style="cursor:pointer; padding:12px; font-weight:bold; color:#ffbb55;">26. Tsukasa (司)</summary><div style="padding:10px;"><img src="/Picture/26.jpg" style="width:100%; border-radius:8px;"></div></details>
+
+<br>
+
+<div style="text-align: center; color: #ccc; font-size: 12px; margin-top: 30px;">
+  ID 范围更新至 #359 (Made by HX-Wrdzgzs)
+</div>
