@@ -16,13 +16,13 @@
 
 /* 强制让功能卡片在夜间模式变暗 */
 .dark .custom-card {
-  background-color: rgba(255, 255, 255, 0.05) !important; /* 深色半透明 */
+  background-color: rgba(255, 255, 255, 0.05) !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
   color: #e0e0e0 !important;
 }
 .dark .custom-card h3, 
 .dark .custom-card h4 {
-  color: #E97EB3 !important; /* 标题保持粉色 */
+  color: #E97EB3 !important;
 }
 .dark .custom-card code {
   background-color: rgba(0, 0, 0, 0.3) !important;
@@ -53,16 +53,22 @@ img { border-radius: 12px; }
   height: 220px !important;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #E97EB3;
-  box-shadow: 0 0 20px rgba(233, 126, 179, 0.5);
+  
+  /* 👇👇👇 这里改了！彻底去掉边框 👇👇👇 */
+  border: none !important; 
+  
+  /* 加强一点初始光晕，弥补没有边框的视觉 */
+  box-shadow: 0 0 25px rgba(233, 126, 179, 0.6);
+  
   animation: breathe 3s infinite ease-in-out;
   transition: transform 0.3s ease;
 }
 
+/* 呼吸动画：光晕变大变小 */
 @keyframes breathe {
-  0% { box-shadow: 0 0 20px rgba(233, 126, 179, 0.5); }
-  50% { box-shadow: 0 0 50px rgba(233, 126, 179, 0.8); }
-  100% { box-shadow: 0 0 20px rgba(233, 126, 179, 0.5); }
+  0% { box-shadow: 0 0 25px rgba(233, 126, 179, 0.6); }
+  50% { box-shadow: 0 0 60px rgba(233, 126, 179, 0.9); } /* 最亮的时候 */
+  100% { box-shadow: 0 0 25px rgba(233, 126, 179, 0.6); }
 }
 
 .random-hero-avatar:hover { transform: scale(1.05); }
