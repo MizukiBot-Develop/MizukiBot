@@ -1,16 +1,25 @@
 import DefaultTheme from 'vitepress/theme'
-import { h, onMounted } from 'vue'
+import { h, onMounted, ref } from 'vue'
 import './custom.css'
 
 export default {
   extends: DefaultTheme,
+  
+  // 使用 Vue 组件的方式定义 Layout
+  Layout() {
+    // 1. 定义一个响应式变量，默认显示 avatar.jpg
+    const currentAvatar = ref('/Picture/avatar.jpg')
 
-  // 核心逻辑：页面加载后运行
-  setup() {
     onMounted(() => {
-      // ===========================================
-      // 1. 随机语录逻辑
-      // ===========================================
+      // --- 随机头像逻辑 ---
+      const images = [
+        '/Picture/avatar.jpg',
+        '/Picture/logo.gif'
+      ];
+      // 这里的 .value 修改会立刻触发页面更新
+      currentAvatar.value = images[Math.floor(Math.random() * images.length)];
+
+      // --- 随机语录逻辑 ---
       const quotes = [
         "「 ボクは……ボクでいたいだけ 」<br>我只是……想做我自己罢了",
         "「 秘密って、なんだかワクワクしない？ 」<br>所谓秘密，不觉得令人有些兴奋吗？",
@@ -20,10 +29,9 @@ export default {
         "「 逃げ続けるのも、悪くないかもね 」<br>一直逃避下去，或许也不坏呢",
         "「 君も、こっち側に来る？ 」<br>你也要，来这边吗？"
       ];
-      
       const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
       
-      // 延时替换语录
+      // 语录替换
       setTimeout(() => {
         const tagline = document.querySelector('.VPHero .tagline');
         if (tagline) {
@@ -31,40 +39,15 @@ export default {
           tagline.classList.add('hero-quote');
         }
       }, 50);
-
-      // ===========================================
-      // 2. 随机头像逻辑 (修复版)
-      // ===========================================
-      
-      // 👇👇👇 以后想加图片，就在这里加逗号，继续写路径 👇👇👇
-      const images = [
-        '/Picture/avatar.jpg',
-        '/Picture/logo.gif'
-        // '/Picture/3.jpg', 
-        // '/Picture/4.png' 
-      ];
-      
-      // 随机选一张
-      const randomImg = images[Math.floor(Math.random() * images.length)];
-      
-      // 找到图片元素并替换 src
-      const avatarImg = document.getElementById('random-avatar-img') as HTMLImageElement;
-      if (avatarImg) {
-        avatarImg.src = randomImg;
-      }
     })
-  },
 
-  // 布局渲染
-  Layout: () => {
+    // 返回渲染函数
     return h(DefaultTheme.Layout, null, {
       'home-hero-image': () => {
         return h('div', { class: 'hero-wrapper' }, [
-          // 默认先渲染 avatar.jpg，防止空白
-          // 加上 id="random-avatar-img" 方便上面 setup() 里的代码找到它
           h('img', { 
-            id: 'random-avatar-img', 
-            src: '/Picture/avatar.jpg', 
+            // 这里的 src 绑定了上面的变量，变量一变，图片立马变
+            src: currentAvatar.value, 
             class: 'random-hero-avatar', 
             alt: 'Mizuki Bot Hero'
           })
