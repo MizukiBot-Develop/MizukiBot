@@ -5,6 +5,8 @@ hero:
   name: "Mizuki Bot 帮助文档"
   text: ""
   tagline: "Loading..."
+  # ❌ 注意：绝对不要在这里写 image: xxx
+  # 留空，让代码自动生成随机头像
   
   actions:
     - theme: brand
