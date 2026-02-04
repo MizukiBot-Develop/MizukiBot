@@ -10,7 +10,6 @@
 * **备用 Bot**: `[备用]Mizuki Bot` (3675727244)
     * *机制：当主 Bot 掉线或被风控时，将启用备用 Bot。*
 * **帮助文档**: [help.mizuki.top](https://help.mizuki.top)
-    * *注：域名预计将于 2026年 1月底 更换，请留意群公告。*
 
 ::: warning ⚠️ PJSK 功能特别说明
 1.  Bot 的 **PJSK 功能不支持私聊**。
@@ -51,3 +50,7 @@
     * 上传后必须打完一首歌才能生效。
 3.  拉 Bot 进群或有其他不懂的问题，均可咨询群管或群主。
 :::
+
+<style>
+h2 { border-bottom: 1px solid var(--vp-c-divider); padding-bottom: 10px; margin-top: 20px; }
+</style>
