@@ -1,27 +1,48 @@
+/* =========================================
+   Mizuki Bot 文档全站样式定义 (Ultimate Ver)
+   ========================================= */
+
+/* --- 1. 全局变量与配色 --- */
 :root {
   --vp-c-brand-1: #E97EB3;
   --vp-c-brand-2: #d66ea3;
   --vp-c-brand-3: #c35e93;
   --vp-c-brand-soft: rgba(233, 126, 179, 0.14);
+  
+  /* 代码块背景色 */
   --vp-code-block-bg: #f9f0ff;
+  
+  /* 首页大标题渐变色 */
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #E97EB3 30%, #8A66C2);
 }
 
-.dark { --vp-code-block-bg: #1e1e1e; }
+/* 夜间模式变量 */
+.dark { 
+  --vp-code-block-bg: #1e1e1e; 
+}
 
-/* 卡片夜间模式 */
+/* 全局图片圆角 */
+img { border-radius: 12px; }
+
+/* --- 2. 卡片与组件夜间模式适配 --- */
 .dark .custom-card {
   background-color: rgba(255, 255, 255, 0.05) !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
   color: #e0e0e0 !important;
 }
-.dark .custom-card h3, .dark .custom-card h4 { color: #E97EB3 !important; }
-.dark .custom-card code { background-color: rgba(0, 0, 0, 0.3) !important; color: #ffadd2 !important; }
+.dark .custom-card h3, 
+.dark .custom-card h4 { 
+  color: #E97EB3 !important; 
+}
+.dark .custom-card code { 
+  background-color: rgba(0, 0, 0, 0.3) !important; 
+  color: #ffadd2 !important; 
+}
 
-img { border-radius: 12px; }
+/* --- 3. 首页 Hero 区域 (头像/标题) --- */
 
-/* --- 首页样式 --- */
+/* 标题渐变 */
 .VPHero .name {
   background: var(--vp-home-hero-name-background);
   -webkit-background-clip: text;
@@ -30,12 +51,12 @@ img { border-radius: 12px; }
   line-height: 1.2;
 }
 
-/* 👇👇👇 关键：隐藏原来的 tagline (Loading文字) 👇👇👇 */
+/* 隐藏默认的 Loading 文字 */
 .VPHero .tagline {
   display: none !important;
 }
 
-/* 容器 */
+/* 自定义头像容器 */
 .hero-wrapper {
   display: flex;
   flex-direction: column;
@@ -44,7 +65,7 @@ img { border-radius: 12px; }
   margin-bottom: 20px;
 }
 
-/* 头像 */
+/* 呼吸灯头像特效 */
 .random-hero-avatar {
   width: 220px !important;
   height: 220px !important;
@@ -62,14 +83,57 @@ img { border-radius: 12px; }
   100% { filter: drop-shadow(0 0 15px rgba(233, 126, 179, 0.5)); }
 }
 
-/* 👇 新的语录样式 */
+/* 随机语录样式 */
 .my-custom-quote {
   margin-top: 25px;
   text-align: center;
   font-size: 15px;
-  color: #999; /* 浅灰色 */
+  color: #999;
   font-style: italic;
   font-weight: 500;
   line-height: 1.6;
-  min-height: 24px; /* 占位防止跳动 */
+  min-height: 24px;
+}
+
+/* --- 4. 关键修复：首页按钮强制一行显示 --- */
+
+/* 强制按钮容器不换行 */
+.VPHero .actions {
+  display: flex !important;
+  flex-wrap: nowrap !important; /* 禁止换行核心代码 */
+  justify-content: center;
+  gap: 8px !important; /* 按钮间距 */
+}
+
+/* 清除按钮默认边距 */
+.VPHero .action {
+  margin: 0 !important;
+}
+
+/* --- 5. 移动端深度适配 (针对手机屏幕) --- */
+@media (max-width: 640px) {
+  /* 强制缩小按钮尺寸，确保三个能塞进一行 */
+  .VPHero .VPButton {
+    padding: 6px 10px !important;   /* 极窄内边距 */
+    font-size: 12px !important;     /* 缩小字号 */
+    line-height: 24px !important;   /* 调整行高 */
+    min-width: auto !important;     /* 取消最小宽度限制 */
+    white-space: nowrap !important; /* 禁止文字换行 */
+    height: auto !important;
+  }
+  
+  /* 调整头像大小和间距，防止手机端太挤 */
+  .hero-wrapper {
+    margin-top: 30px;
+  }
+  .random-hero-avatar {
+    width: 160px !important;
+    height: 160px !important;
+  }
+  
+  /* 语录字号微调 */
+  .my-custom-quote {
+    font-size: 13px;
+    margin-top: 15px;
+  }
 }
