@@ -40,13 +40,13 @@ const jumpToAuth = () => {
   </button>
 
   <div class="tips">
-    <p><strong>操作说明：</strong></p>
-    <ol>
-      <li>输入 QQ 号，点击跳转按钮。</li>
-      <li>在落雪页面确认授权。</li>
-      <li><strong>复制</strong> 页面显示的授权代码。</li>
-      <li>回到 Bot 聊天窗口，发送：<code>落雪确认 [授权代码]</code></li>
-    </ol>
+    <p><strong>⚠️ 授权后操作说明：</strong></p>
+    <p style="color: #ff4d4f; font-weight: bold; margin-top: 5px;">
+      获取到授权码后，请回到群里艾特机器人发送！
+    </p>
+    <div style="background: rgba(0,0,0,0.05); padding: 10px; border-radius: 6px; margin-top: 8px;">
+      <code>@Mizuki Bot 落雪确认 [授权码]</code>
+    </div>
   </div>
 </div>
 
@@ -86,6 +86,7 @@ const jumpToAuth = () => {
   cursor: pointer;
   border: none;
   transition: opacity 0.2s;
+  width: 100%; /* 手机上按钮撑满更好看 */
 }
 
 .action-button:hover {
@@ -97,6 +98,6 @@ const jumpToAuth = () => {
   padding-top: 20px;
   border-top: 1px dashed var(--vp-c-divider);
   font-size: 14px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 </style>
