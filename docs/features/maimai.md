@@ -42,6 +42,10 @@
 
 <div class="custom-card" style="background: var(--vp-c-bg-soft); border-left: 5px solid #722ed1; padding: 20px; border-radius: 12px; margin-bottom: 20px;">
   <h3 style="margin-top: 0; color: #722ed1;">🖥️ 舞萌服务器状态</h3>
+  <p style="font-size: 13px; opacity: 0.8; margin-bottom: 15px;">
+    实时监控代理机连通性。<br>
+    <a href="https://status.mizuki.top" target="_blank" style="color:#722ed1; font-weight:bold;">👉 点击访问 status.mizuki.top 查看网页版</a>
+  </p>
 
 | 指令 | 说明 |
 | :--- | :--- |
@@ -64,9 +68,15 @@
 
 <div class="custom-card" style="background: var(--vp-c-bg-soft); border: 2px solid #ff4d4f; padding: 25px; border-radius: 15px; margin-top: 30px;">
   <h3 style="margin-top: 0; color: #ff4d4f;">🔄 成绩同步助手 (Sync)</h3>
-  <p style="font-size: 13px; opacity: 0.8; margin-bottom: 15px;">
-    <strong style="color:#ff4d4f;">⚠️ 维护时间: 每日 00:00-11:00 暂停服务</strong>
-  </p>
+  
+  <div style="background:rgba(255, 77, 79, 0.1); padding:10px; border-radius:8px; margin-bottom:15px;">
+    <p style="font-size: 13px; color:#ff4d4f; font-weight:bold; margin:0;">
+      ⚠️ 维护时间: 每日 00:00-11:00 暂停服务
+    </p>
+    <a href="/disclaimer" style="font-size: 12px; color:#ff4d4f; text-decoration: underline; display:block; margin-top:5px;">
+      📖 阅读：服务条款与免责声明 | Mizuki Bot 帮助文档
+    </a>
+  </div>
 
   <h4 style="color: #ff7875; margin-top: 15px;">1. 设置与绑定</h4>
 
