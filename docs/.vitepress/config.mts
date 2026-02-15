@@ -1,23 +1,34 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  // 站点元数据
   title: "Mizuki Bot 帮助文档",
-  description: "专为 PJSK 与 舞萌 DX 玩家打造的bot助手",
+  description: "专为 PJSK 与 舞萌 DX 玩家打造的 Bot 助手",
   lang: 'zh-CN',
   
+  // ✨✨✨ 关键修改：使用 avatar.jpg 作为图标 ✨✨✨
   head: [
-    ['link', { rel: 'icon', href: '/Picture/logo.gif' }]
+    // 直接使用 avatar.jpg 作为网站图标
+    ['link', { rel: 'icon', href: '/Picture/avatar.jpg' }],
+    
+    // SEO 关键词 (方便搜索引擎收录)
+    ['meta', { name: 'keywords', content: 'Mizuki Bot, PJSK, Project Sekai, 舞萌DX, maimai, 音游Bot, 帮助文档' }],
+    ['meta', { name: 'author', content: 'HX-Wrdzgzs' }]
   ],
 
+  // ✨✨✨ 生成 Sitemap (帮助搜索结果显示子链接) ✨✨✨
+  sitemap: {
+    hostname: 'https://help.mizuki.top'
+  },
+
   themeConfig: {
-    logo: '/Picture/logo.gif',
+    logo: '/Picture/logo.gif', // 网站左上角保持动图
     siteTitle: 'Mizuki Bot 帮助文档',
 
     // 顶部导航栏
     nav: [
       { text: '首页', link: '/' },
-      // ❌ 已删除 "快速开始"
-      { text: '问题反馈', link: '/feedback' }, // ✅ 新增反馈
+      { text: '问题反馈', link: '/feedback' },
       { 
         text: '功能大全', 
         items: [
@@ -36,9 +47,8 @@ export default defineConfig({
         {
           text: '入门指南',
           items: [
-            // ❌ 已删除 "如何使用"
             { text: '🔗 落雪绑定', link: '/bind' },
-            { text: '📝 问题反馈', link: '/feedback' } // ✅ 新增反馈
+            { text: '📝 问题反馈', link: '/feedback' }
           ]
         },
         {
