@@ -10,14 +10,14 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    // 这里设置网站左上角的小图标
     logo: '/Picture/logo.gif',
     siteTitle: 'Mizuki Bot 帮助文档',
 
-    // 👇 1. 顶部导航栏 (Nav) 配置
+    // 顶部导航栏
     nav: [
       { text: '首页', link: '/' },
-      { text: '快速开始', link: '/usage' },
+      // ❌ 已删除 "快速开始"
+      { text: '问题反馈', link: '/feedback' }, // ✅ 新增反馈
       { 
         text: '功能大全', 
         items: [
@@ -27,25 +27,18 @@ export default defineConfig({
           { text: '通用工具', link: '/features/tools' }
         ]
       },
-      // 👇 下滑栏/顶部菜单显示新页面 👇
-      { 
-        text: '关于与规范', 
-        items: [
-           { text: '贡献榜', link: '/contribution' },
-           { text: '群规', link: '/rules' },
-           { text: '提问智慧', link: '/asking' }
-        ]
-      }
+      { text: '贡献榜', link: '/contribution' }
     ],
 
-    // 👇 2. 侧边栏 (Sidebar) 配置
+    // 侧边栏
     sidebar: {
       '/': [
         {
           text: '入门指南',
           items: [
-            { text: '如何使用', link: '/usage' },
-            { text: '🔗 落雪绑定', link: '/bind' } // ✅ 绑定页在这里
+            // ❌ 已删除 "如何使用"
+            { text: '🔗 落雪绑定', link: '/bind' },
+            { text: '📝 问题反馈', link: '/feedback' } // ✅ 新增反馈
           ]
         },
         {
@@ -61,8 +54,8 @@ export default defineConfig({
           text: '关于与规范',
           items: [
             { text: '👥 贡献者与鸣谢', link: '/contribution' },
-            { text: '📋 群规与公告', link: '/rules' }, // ✅ 群规页
-            { text: '💡 提问的智慧', link: '/asking' }, // ✅ 提问页
+            { text: '📋 群规与公告', link: '/rules' },
+            { text: '💡 提问的智慧', link: '/asking' },
             { text: '⚖️ 免责声明', link: '/disclaimer' }
           ]
         }
