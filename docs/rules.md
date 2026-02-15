@@ -3,22 +3,23 @@
 <br>
 
 <div class="custom-card" style="background: var(--vp-c-bg-soft); border-left: 5px solid #1890ff; padding: 20px; border-radius: 12px; margin-bottom: 25px;">
-  <h3 style="margin-top: 0; color: #1890ff;">🤖 Bot 账号列表</h3>
-  <p style="font-size: 13px; opacity: 0.8; margin-bottom: 10px;">请认准以下官方账号，谨防假冒。</p>
+  <h3 style="margin-top: 0; color: #1890ff;">🤖 Bot 账号列表与分工</h3>
+  <p style="font-size: 13px; opacity: 0.8; margin-bottom: 15px;">
+    为了分流压力，Bot 分为 <strong>综合型</strong> 和 <strong>PJSK 专用型</strong>，请根据需求添加。
+  </p>
   
-| 机号 | QQ 号 |
-| :--- | :--- |
-| **1号机** | `3986839028` |
-| **2号机** | `1005524479` |
-| **3号机** | `3947949425` |
-| **4号机** | `3925294264` |
-| **5号机** | `3904382316` |
-| **6号机** | `3675727244` |
-| **文档网址** | [help.mizuki.top](https://help.mizuki.top) |
+| 机号 | QQ 号 | 主要职责 |
+| :--- | :--- | :--- |
+| **1号机** | `3986839028` | 🛠️ **综合功能** (除 PJSK) |
+| **2号机** | `1005524479` | 🎵 **PJSK 查分/查榜** |
+| **3号机** | `3947949425` | 🛠️ **综合功能** (除 PJSK) |
+| **4号机** | `3925294264` | 🎵 **PJSK 查分/查榜** |
+| **5号机** | `3904382316` | 🛠️ **综合功能** (除 PJSK) |
+| **6号机** | `3675727244` | 🎵 **PJSK 查分/查榜** |
 
   <div style="background:rgba(255, 77, 79, 0.1); padding:10px; border-radius:8px; margin-top:15px;">
     <p style="font-size: 13px; color:#ff4d4f; font-weight:bold; margin:0;">
-      ⚠️ PJSK 功能特别说明
+      ⚠️ PJSK 功能特别说明 (针对 2、4、6号机)
     </p>
     <ul style="margin:5px 0 0 20px; font-size:13px; opacity:0.9; color:#ff4d4f;">
       <li>Bot 的 PJSK 功能 <strong>不支持私聊</strong>。</li>
