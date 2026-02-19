@@ -21,7 +21,6 @@
 
 | 指令 | 说明 |
 | :--- | :--- |
-| `[文件夹] 上传 [图]` | 上传图片到本地库 |
 | `最近上传` | (管理) 查看最新入库记录 |
 | `删除 [图片名]` | (管理) 删除图片及记录 |
 | `溯源 [图片名]` | (管理) 查看上传者QQ |
@@ -83,7 +82,7 @@
 
 </div>
 
-<div class="custom-card" style="background: #1b2838; color: #c7d5e0; padding: 20px; border-radius: 15px; margin-bottom: 40px;">
+<div class="custom-card" style="background: var(--vp-c-bg-soft); border-left: 5px solid #66c0f4; padding: 20px; border-radius: 12px; margin-bottom: 25px;">
   <h3 style="margin-top: 0; color: #66c0f4;">🎮 Steam 工具</h3>
   
 | 指令 | 说明 |
@@ -92,15 +91,4 @@
 | `steam播报开启` | 开启群内折扣播报 |
 | `steam喜加一` | 查询限时免费游戏 |
 
-</div>
-
-<div class="custom-card" style="background: var(--vp-c-bg-soft); border: 2px dashed #ff4d4f; padding: 30px; border-radius: 15px; text-align: center;">
-  <h3 style="margin-top: 0; color: #ff4d4f;">❤️ 赞助与支持</h3>
-  <p style="font-size: 14px; opacity: 0.8; margin-bottom: 20px;">
-    Bot 的服务器与代理节点需要持续的资金投入。<br>如果您觉得 Mizuki Bot 对您有帮助，欢迎请开发者喝杯咖啡，您的支持是我们最大的动力！
-  </p>
-  
-  <img src="/Picture/alipay.jpg" alt="支付宝收款码" style="width: 200px; height: 200px; border-radius: 12px; border: 3px solid #ff4d4f; margin: 0 auto; display: block; box-shadow: 0 4px 15px rgba(255, 77, 79, 0.2);">
-  
-  <p style="font-size: 13px; color: #ff4d4f; font-weight: bold; margin-top: 15px;">▲ 支付宝扫码支持 ▲</p>
 </div>
