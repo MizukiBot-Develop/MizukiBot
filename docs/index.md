@@ -8,14 +8,14 @@ hero:
   
   actions:
     - theme: brand
-      text: 📝 问题反馈
-      link: /feedback
+      text: 📖 如何使用
+      link: /usage
     - theme: alt
       text: 🎵 PJSK 功能
       link: /features/pjsk
     - theme: alt
-      text: 🔗 落雪绑定
-      link: /bind
+      text: 📝 问题反馈
+      link: /feedback
 
 features:
   - title: 🎵 音游专项
