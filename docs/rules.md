@@ -14,7 +14,7 @@
 | **2号机** | `1005524479` | 🎵 **PJSK 查分/查榜** |
 | **3号机** | `3947949425` | 🛠️ **综合功能** (除 PJSK) |
 | **4号机** | `3925294264` | 🎵 **PJSK 查分/查榜** |
-| **5号机** | `3904382316` | 🛠️ **综合功能** (除 PJSK) |
+| **5号机** | `3855838409` | 🛠️ **综合功能** (除 PJSK) |
 | **6号机** | `3675727244` | 🎵 **PJSK 查分/查榜** |
 
   <div style="background:rgba(255, 77, 79, 0.1); padding:10px; border-radius:8px; margin-top:15px;">
@@ -46,7 +46,7 @@
 | 项目 | 说明 |
 | :--- | :--- |
 | **关于 CP** | 本群 CP 自由，请互相尊重。 |
-| **反馈渠道** | 遇到 Bot 报错或纠纷，请在群内 @管理员。 |
-| **指令反馈** | 发送 `反馈 [问题描述]` 提交。 |
+| **问题反馈** | <a href="https://wrdzgzs2024.feishu.cn/share/base/form/shrcnAK9hJGLF40ga1frnQo7XLg" target="_blank" style="color:#52c41a; font-weight:bold; text-decoration:underline;">👉 点击填写飞书反馈表单</a> |
+| **邮件支持** | 发送邮件至 `help@mizuki.top` 获取帮助。 |
 
 </div>
