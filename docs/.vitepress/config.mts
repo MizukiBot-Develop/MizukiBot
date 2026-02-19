@@ -6,23 +6,18 @@ export default defineConfig({
   description: "专为 PJSK 与 舞萌 DX 玩家打造的 Bot 助手",
   lang: 'zh-CN',
   
-  // ✨✨✨ 关键修改：使用 avatar.jpg 作为图标 ✨✨✨
   head: [
-    // 直接使用 avatar.jpg 作为网站图标
     ['link', { rel: 'icon', href: '/Picture/avatar.jpg' }],
-    
-    // SEO 关键词 (方便搜索引擎收录)
     ['meta', { name: 'keywords', content: 'Mizuki Bot, PJSK, Project Sekai, 舞萌DX, maimai, 音游Bot, 帮助文档' }],
     ['meta', { name: 'author', content: 'HX-Wrdzgzs' }]
   ],
 
-  // ✨✨✨ 生成 Sitemap (帮助搜索结果显示子链接) ✨✨✨
   sitemap: {
     hostname: 'https://help.mizuki.top'
   },
 
   themeConfig: {
-    logo: '/Picture/logo.gif', // 网站左上角保持动图
+    logo: '/Picture/logo.gif',
     siteTitle: 'Mizuki Bot 帮助文档',
 
     // 顶部导航栏
@@ -72,9 +67,7 @@ export default defineConfig({
       ]
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/HX-Wrdzgzs/MizukiBot' }
-    ],
+    // ❌ 已经彻底删除了这里的 socialLinks (GitHub 图标)
 
     footer: {
       message: 'Created with ♿ by HX-Wrdzgzs',
