@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  // 站点元数据
   title: "Mizuki Bot 帮助文档",
   description: "专为 PJSK 与 舞萌 DX 玩家打造的 Bot 助手",
   lang: 'zh-CN',
@@ -20,7 +19,6 @@ export default defineConfig({
     logo: '/Picture/logo.gif',
     siteTitle: 'Mizuki Bot 帮助文档',
 
-    // 顶部导航栏
     nav: [
       { text: '首页', link: '/' },
       { text: '问题反馈', link: '/feedback' },
@@ -36,12 +34,12 @@ export default defineConfig({
       { text: '贡献榜', link: '/contribution' }
     ],
 
-    // 侧边栏
     sidebar: {
       '/': [
         {
           text: '入门指南',
           items: [
+            { text: '📖 如何使用', link: '/usage' }, // ✅ 恢复了如何使用，且没有英文
             { text: '🔗 落雪绑定', link: '/bind' },
             { text: '📝 问题反馈', link: '/feedback' }
           ]
@@ -61,13 +59,12 @@ export default defineConfig({
             { text: '👥 贡献者与鸣谢', link: '/contribution' },
             { text: '📋 群规与公告', link: '/rules' },
             { text: '💡 提问的智慧', link: '/asking' },
-            { text: '⚖️ 免责声明', link: '/disclaimer' }
+            { text: '⚖️ 免责声明', link: '/disclaimer' },
+            { text: '❤️ 赞助与支持', link: '/sponsor' } // ✅ 新增独立赞助页
           ]
         }
       ]
     },
-
-    // ❌ 已经彻底删除了这里的 socialLinks (GitHub 图标)
 
     footer: {
       message: 'Created with ♿ by HX-Wrdzgzs',
