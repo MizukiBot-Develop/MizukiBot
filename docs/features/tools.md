@@ -92,3 +92,14 @@
 | `steam喜加一` | 查询限时免费游戏 |
 
 </div>
+
+<style>
+/* 强制表格的第一列（指令）和第三列（示例）不换行，让第二列（说明）有更多空间 */
+.custom-card table th:nth-child(1),
+.custom-card table td:nth-child(1),
+.custom-card table th:nth-child(3),
+.custom-card table td:nth-child(3) {
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+}
+</style>
