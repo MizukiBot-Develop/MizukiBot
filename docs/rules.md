@@ -5,7 +5,7 @@
 <div class="custom-card" style="background: var(--vp-c-bg-soft); border-left: 5px solid #1890ff; padding: 20px; border-radius: 12px; margin-bottom: 25px;">
   <h3 style="margin-top: 0; color: #1890ff;">🤖 Bot 账号列表与分工</h3>
   <p style="font-size: 13px; opacity: 0.8; margin-bottom: 15px;">
-    为了分流压力，Bot 分为 <strong>综合型</strong> 、 <strong>PJSK 专用型</strong>  <strong>专用型</strong>，请根据需求添加。
+    为了分流压力，Bot 分为 <strong>综合</strong> 、 <strong>PJSK</strong> 、 <strong>专用</strong>，请根据需求添加。
   </p>
   
 | 机号 | QQ 号 | 主要职责 |
