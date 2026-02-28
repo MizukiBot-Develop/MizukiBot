@@ -63,7 +63,7 @@
 | **网站设计** | Te:River / HX-Wrdzgzs |
 | **美术设计** | uni_mayu (Logo) / HX-Wrdzgzs (UI) / m (Bot头像) |
 | **数据支持** | Te:River |
-| **软硬件支持** | 同道中人 / Sirius / HX-Wrdzgzs |
+| **软硬件支持** | Te:River / Sirius / HX-Wrdzgzs |
 | **特别鸣谢** | HZK_CN / MC_FanBuFan |
 
 </div>
