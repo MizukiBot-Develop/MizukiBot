@@ -10,22 +10,25 @@
   </h3>
   <p style="font-size: 14px; opacity: 0.8; margin-bottom: 20px;">感谢以下大佬对本项目的资金支持（排名不分先后）：</p>
 
-  <ul style="list-style-type: none; padding-left: 0;">
-    <li style="font-size: 18px; margin-bottom: 15px; display: flex; align-items: center;">
-      <span style="display: inline-block; width: 8px; height: 8px; background-color: #faad14; border-radius: 50%; margin-right: 12px;"></span>
-      <strong style="letter-spacing: 1px;">HZK_CN</strong>
-    </li>
-    <li style="font-size: 18px; margin-bottom: 15px; display: flex; align-items: center;">
-      <span style="display: inline-block; width: 8px; height: 8px; background-color: #faad14; border-radius: 50%; margin-right: 12px;"></span>
-      <strong style="letter-spacing: 1px;">Re:tribution</strong>
-    </li>
-  </ul>
+| 赞助商 ID | 备注与鸣谢 |
+| :--- | :--- |
+| **HZK_CN** | 感谢大佬对服务器与节点的慷慨支持！ |
+| **Re:tribution** | 感谢大佬对服务器与节点的慷慨支持！ |
+
 </div>
 
 <style>
-.custom-card li:hover {
-  transform: translateX(8px);
-  transition: transform 0.2s ease;
+/* 赞助榜表格专属高亮样式 */
+.custom-card table th {
   color: #faad14;
+}
+.custom-card table td:nth-child(1) {
+  color: #faad14;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.custom-card table tr:hover td {
+  background-color: rgba(250, 173, 20, 0.08);
+  transition: background-color 0.3s;
 }
 </style>
