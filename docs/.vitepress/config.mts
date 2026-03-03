@@ -41,7 +41,14 @@ export default defineConfig({
           { text: '通用工具', link: '/features/tools' }
         ]
       },
-      { text: '贡献榜', link: '/contribution' }
+      // ✅ 顶部导航栏改为下拉菜单，包含两个榜单
+      { 
+        text: '鸣谢与赞助', 
+        items: [
+          { text: '👥 贡献榜', link: '/contribution' },
+          { text: '💎 赞助榜', link: '/sponsor_list' }
+        ]
+      }
     ],
 
     sidebar: {
@@ -66,12 +73,13 @@ export default defineConfig({
         {
           text: '关于与规范',
           items: [
-            { text: '👥 贡献者与鸣谢', link: '/contribution' },
+            { text: '👥 贡献榜名单', link: '/contribution' }, // 代码贡献
+            { text: '💎 赞助榜名单', link: '/sponsor_list' }, // 金主赞助
             { text: '📋 群规与公告', link: '/rules' },
             { text: '💡 提问的智慧', link: '/asking' },
             { text: '⚖️ 免责声明', link: '/disclaimer' },
-            { text: '📜 用户使用协议', link: '/agreement' }, // ✅ 完美加入协议页
-            { text: '❤️ 赞助与支持', link: '/sponsor' }
+            { text: '📜 用户使用协议', link: '/agreement' },
+            { text: '❤️ 赞助我们', link: '/sponsor' } // 支付页面
           ]
         }
       ]
