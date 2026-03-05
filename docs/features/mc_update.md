@@ -1,4 +1,4 @@
-# ![草方块](https://zh.minecraft.wiki/w/%E8%8D%89%E6%96%B9%E5%9D%97#/media/File:Grass_Block_JE7_BE6.png) Mizuki MC 更新公告
+# ![草方块](/Grass_Block_JE7_BE6.png) Mizuki MC 更新公告
 
 > 📅 更新日期：2026.3.5 | ✍️ 整合包作者：MC_FanBuFan
 
