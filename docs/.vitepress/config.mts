@@ -64,7 +64,7 @@ export default defineConfig({
         {
           text: '📢 更新与公告',
           items: [
-            { text: '🟩 MC 服务器更新', link: '/features/mc_update' },
+            { text: '<img src="/Picture/Grass_Block_JE7_BE6.png" width="20" style="vertical-align: middle; margin-right: 4px;"> MC 服务器更新', link: '/features/mc_update'},
             { text: '🤖 Bot 更新日志', link: '/features/bot_update' } // 👈 就是这一行！帮您加好了！
           ]
         },
